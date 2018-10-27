@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 2.8)
+project(main)
+find_package(OpenCV REQUIRED)
+message(STATUS "OpenCV library status:")
+message(STATUS "    version: ${OpenCV_VERSION}")
+message(STATUS "    libraries: ${OpenCV_LIBS}")
+message(STATUS "    include path: ${OpenCV_INCLUDE_DIRS}")
+add_executable(main main.cpp)
